@@ -1,0 +1,214 @@
+.landing-text h1,
+.landing-text h2 {
+    text-align: start;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+}
+
+
+
+.name {
+    font-weight: bolder;
+    color: #191919;
+    text-transform: capitalize;
+
+}
+
+.section-btn a,
+.mybtn {
+    background-color: #f0437d9b;
+    color: white;
+    font-size: 2rem;
+    border-radius: 15px 0px 5px 0px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .24);
+
+}
+
+.modal {
+    font-size: 2rem;
+}
+
+.section-btn a:hover {
+    background-color: #f0437e;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.name {
+    color: #f6f6f6;
+}
+
+.name2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.first,
+.first1 {
+    color: #f0437e;
+    font-weight: bold;
+}
+
+.first::before {
+
+    display: inline-block;
+    margin: 2rem 5px 0;
+    height: 3px;
+    width: 2rem;
+    content: " ";
+    text-shadow: none;
+    background-color: #f0437d9b;
+}
+
+
+.fullname {
+    font-size: 5rem;
+}
+
+.landing-img img {
+    max-width: 480px;
+    width: 320px;
+    min-width: 300px;
+    border-radius: 25px 0px 250px 25px;
+}
+
+.landing-img {
+    background-color: #FFF;
+}
+
+/****** the projects *****/
+.see-projects a {
+    color: #191919;
+}
+
+.see-projects a:after,
+.see-projects a:before {
+    display: inline-block;
+    margin: 2rem 5px 0 0;
+    width: 25%;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #f0437d9b;
+}
+
+.see-projects h1::after,
+.see-projects h1::before {
+    display: inline-block;
+    margin: 2rem 5px 0;
+    width: 4rem;
+    height: 3px;
+    content: "";
+    text-shadow: none;
+    background-color: #f0437d9b;
+}
+
+.project-info--headings {
+    color: #f0437d9b;
+    width: fit-content;
+    background-color: rgba(255, 255, 0, 0.904);
+}
+
+.skills-icon-holder {
+    background: transparent;
+    width: 90px;
+    top: -40px;
+    text-align: center;
+}
+
+.skills-icon {
+    min-width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list li {
+    display: block;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.skills-block-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    min-height: 360px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .23);
+    border: 1px solid #ebebeb;
+    border-radius: 25px;
+}
+
+.send {
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-align: center;
+    width: 88px;
+    height: 35px;
+    background-color: #db5a85;
+    color: white;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .53);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.send:hover {
+    width: fit-content;
+    background-color: #f0437e;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+.text-icon {
+    color: #f0437e;
+}
+
+.text-icon-secondary {
+    color: rgba(68, 43, 105, 0.673);
+}
+
+.text-icon-trinary {
+    color: rgba(184, 168, 206, 0.973);
+}
+
+
+/**** *****/
+.now {
+    margin: 18rem auto 1rem auto;
+}
+
+.now-content {
+    margin: 20rem auto;
+    height: 100vh;
+}
+
+.projects,
+.skills,
+.about-me {
+    margin-top: 20rem;
+    margin-bottom: 15rem;
+}
+
+.web-dev-projects,
+.mobile-dev-projects {
+    margin-bottom: 15rem;
+}
+
+.project-showcase {
+    margin-top: 20rem;
+    margin-bottom: 25rem;
+}
+
+@media screen and (max-width:800px) {
+
+    .see-projects a:after,
+    .see-projects a:before {
+        width: 15%;
+    }
+}

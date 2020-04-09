@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Nouh Ben Kadi
+    </title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- FontAwesome CSS -->
+    <script src="https://kit.fontawesome.com/9008b041c7.js" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/_navbar.css">
+    <link rel="stylesheet" href="./css/_content.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1 class="font-weight-bolder text-center logo">
+                        NB
+                    </h1>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#contact" class="nav-link current">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="nav-link">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav-link">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link disabled">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="social-media">
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-codepen fa-2x"></i>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--MODAL CONTACT FORM-->
+    <!-- Central Modal Small -->
+    <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <!-- Change class .modal-sm to change the size of the modal -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container mt-2 bg-white">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                    style="font-size: 2rem;">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xs-6 col-sm-8 col-md-4 text-center">
+                                <img src="./images/undraw_contact_us_15o2.svg" alt="" srcset=""
+                                    class="rounded mx-auto d-block w-100 h-100">
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xs-10 col-sm-10 col-md-10">
+                                <form action="" class="form contact-form" method="POST">
+                                    <div class="form-group">
+                                        <label for="full-name" class="mb-3 mt-3 font-weight-bold">Full Name:</label>
+                                        <input type="text" name="full-name" id="fullname" class="form-control"
+                                            placeholder="Jhon Doe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="font-weight-bold mb-3 mt-3">Email:</label>
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            placeholder="jhon.doe@email.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message" class="font-weight-bold mb-3 mt-2">Message:</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                                            </textarea>
+                                    </div>
+                                    <div class="form-group mx-auto w-50 h-100 my-4">
+                                        <button type="submit" class="form-control btn btn-primary font-weight-bold">
+                                            Send
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container-fluid">
+        <!--Landing-->
+        <div class="container landing">
+            <div
+                class="row align-items-center justify-content-sm-center justify-content-md-center justify-content-lg-center myrow">
+                <div class="col-xs-12 col-sm-12 col-md-10 text-center col-lg-5 landing-img py-2 px-4">
+                    <img src="./images/me3.png" alt="a person's gace picture" srcset="">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12  my-xs-5 col-lg-6 landing-text">
+                    <div class="container">
+                        <div class="row mt-5">
+                            <div class="col-12 mt-5">
+                                <h2>
+                                    <span class="first">
+                                        Hi, I am
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                <strong>
+                                    <span class="name text-dark bg-light fullname">
+                                        Nouh Ben Kadi
+                                    </span>
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                <h2 class="text-wrap">
+                                    <strong class="ext-dark bg-light rounded-pill first1">
+                                        Mobile Apps <span style="color: #191919; background-color: yellow;">&amp;</span>
+                                        Fullstack Web Dev
+                                    </strong>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-10 offset-1">
+                                <h2 class="intro">
+                                    I <span class="bg-light">have a CS degree</span> and I &hearts;
+                                    building
+                                    web apps using <span class="bg-light">Django</span> and Mobile
+                                    phone apps
+                                    using
+                                    <span class="bg-light">Flutter</span>. <br> Also, I am a <span
+                                        class="bg-light">Youtuber</span>
+                                    and a
+                                    <span class="bg-light">Bodybuilder</span>
+                                    and I'm passionate about gaming, books, skeing,
+                                    diving, horeses and dogs.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center section-btn" id="contact">
+
+                            <div class="col-md-5 col-xs-8 col-sm-8 w-100 text-center my-4">
+                                <a href="#" class="btn btn-lg first">Resume</a>
+                            </div>
+                            <!-- Button trigger modal -->
+
+                            <div class="col-md-5 col-xs-8 col-sm-8 w-100 text-center">
+                                <a href="#" class="btn btn-lg first" data-toggle="modal"
+                                    data-target="#centralModalSm">Contact</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Landing-->
+        <!--NOW-->
+        <div class="container now">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <h1 class="see-projects text-center">
+                        <a href="#now" class="text-decoration-none">
+                            NOW
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- should be generated from django as many rows with 2 columns each pic and text: title, subtitle-->
+        <div class="container now-content" id="now">
+            <div
+                class="row justify-content-md-around justify-content-xs-center justify-content-sm-center align-items-center">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <a href="https://www.youtube.com/channel/UCAuAdYxCUsaXIYDMbjR1lVw?view_as=subscriber"
+                        class="btn first1 d-block">
+                        <i class="fab fa-youtube fa-10x"></i>
+                    </a>
+                </div>
+                <div class="col-xs-10 text-sm-center col-md-5">
+                    <h1 class="text-dark bg-light my-5 text-muted">
+
+                        Youtube
+
+                    </h1>
+                    <h2 class="text-muted my-5  text-xs-center text-sm-center text-md-left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia dicta rem animi
+                        cupiditate esse consectetur eum alias unde sunt in molestias.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container now-content" id="now">
+            <div
+                class="row justify-content-md-around justify-content-xs-center justify-content-sm-center align-items-center">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="text-center">
+                        <img src="./images/usthb-logo.png" width="120px" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="col-xs-10 text-sm-center col-md-5">
+                    <h1 class="text-dark bg-light my-5 text-muted my-5">
+                        Studying
+                    </h1>
+                    <h2 class="text-muted my-5 text-xs-center text-sm-center text-md-left">
+                        Currently, I am studying for a Master degree in Software Engineering at <a
+                            href="https://www.usthb.dz/en" target="blank">USTHB</a>
+                        in Algeria, and working part time as a software engineer.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!--NOW-->
+        <!--projects-->
+        <div class="container projects" id="projects">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                    <h1 class="see-projects text-center">
+                        <a href="#projects" class="text-decoration-none">
+                            My Projects
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!--Begin Web projects-->
+        <div class="container web-dev-projects">
+            <div class="row align-items-center my-5 ml-1 justify-content-center">
+                <div class="col-8 my-5">
+                    <h1 class="text-center text-muted">
+                        #Web Developement
+                    </h1>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center my-5">
+                <div class="col-xs-8 col-sm-8 col-md-6">
+                    <img src="./images/undraw_web_developer_p3e5.svg" alt="" srcset=""
+                        style="max-width: 40rem; min-width: 230px; width: 100%;" class="my-5">
+                </div>
+            </div>
+        </div>
+        <!--list of projects-->
+        <div class="container project-showcase">
+            <div
+                class="row align-items-center justify-content-xs-center justify-content-sm-center justify-content-md-center">
+                <div class="col-xs-10 col-sm-10 col-md-6 my-5 text-center order-sm-10 order-xs-10">
+                    <img src="./images/undraw_code_review_l1q9.svg"
+                        style="max-width: 40rem; min-width: 280px; width: 100%;" alt="" srcset="">
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-6 project-info order-xs-5 order-sm-5">
+                    <div class="container">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <img src="./images/logo.png" alt="" srcset="">
+                            </div>
+                            <div class="col">
+                                <h1 class="text-muted">
+                                    My Personal Portfolio
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light my-4"># Description</h1>
+                                <h3 class="text-muted">
+                                    A simple flutter game I've made as an intake project, the idea is there is a player
+                                    and enemeis who try to touch him and inflict damage, you should tap on each enemy
+                                    multiple times to kill him.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="project-info--headings my-4"># My Role</h1>
+                                <h2 class="text-muted">
+                                    I've build build every single component from scratch and designed the ui myself of
+                                    this portfolio.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light project-info--headings my-4">
+                                    # Technologies
+                                </h1>
+                                <h2 class="text-muted">
+                                    HTML, CSS, Bootstrap, javascript, Ajax and Django.
+                                </h2>
+                            </div>
+                        </div>
+                        <div
+                            class="row section-btn align-items-center justify-content-around text-center project-links">
+
+                            <div class="col-4">
+                                <a href="#" class="btn"><i class="fab fa-github"></i> </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-app-store"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-google-play"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container project-showcase project-showcase-reverese">
+            <div
+                class="row align-items-center justify-content-xs-center justify-content-sm-center justify-content-md-center">
+                <div class="col-xs-10 col-sm-10 col-md-6 project-info order-xs-5 order-sm-5">
+                    <div class="container">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <img src="./images/logo.png" alt="" srcset="">
+                            </div>
+                            <div class="col">
+                                <h1 class="text-muted">
+                                    My Personal Portfolio
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light my-4"># Description</h1>
+                                <h3 class="text-muted">
+                                    A simple flutter game I've made as an intake project, the idea is there is a player
+                                    and enemeis who try to touch him and inflict damage, you should tap on each enemy
+                                    multiple times to kill him.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="project-info--headings my-4"># My Role</h1>
+                                <h2 class="text-muted">
+                                    I've build build every single component from scratch and designed the ui myself of
+                                    this portfolio.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light project-info--headings my-4">
+                                    # Technologies
+                                </h1>
+                                <h2 class="text-muted">
+                                    HTML, CSS, Bootstrap, javascript, Ajax and Django.
+                                </h2>
+                            </div>
+                        </div>
+                        <div
+                            class="row section-btn align-items-center justify-content-around text-center project-links">
+
+                            <div class="col-4">
+                                <a href="#" class="btn"><i class="fab fa-github"></i> </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-app-store"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-google-play"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-6 my-5 text-center order-sm-10 order-xs-10">
+                    <img src="./images/undraw_code_review_l1q9.svg"
+                        style="max-width: 40rem; min-width: 280px; width: 100%;" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!--End Web projects-->
+        <!--Begin Mobile projects-->
+        <div class="container mobile-dev-projects">
+            <div class="row align-items-center my-5 justify-content-center">
+                <div class="col-8 my-5">
+                    <h1 class="text-center text-muted">
+                        #Mobile Developement
+                    </h1>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-xs-8 col-sm-8 col-md-6 my-5">
+                    <img src="./images/undraw_referral_4ki4.svg" alt="" srcset=""
+                        style="max-width: 40rem; min-width: 280px; width: 100%;" class="my-5">
+                </div>
+            </div>
+        </div>
+        <div class="container project-showcase">
+            <div class="row justify-content-center align-items-center justify-content-md-between">
+                <div class=" col-md-5 col-xs-10 col-sm-10 my-5">
+                    <img src="./images/projects/mobile/project1.png"
+                        style="max-width: 40rem; min-width: 280px; width: 100%;" alt="" srcset="">
+                </div>
+                <div class="col-md-5 col-xs-10 col-sm-10 project-info">
+                    <div class="container">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <img src="./images/projects/mobile/project1_logo.png" alt="" srcset="" width="40px">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="text-muted">
+                                    Tap The Swarm
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light my-4"># Description</h1>
+                                <h3 class="text-muted">
+                                    A simple flutter game I've made as an intake project, the idea is there is a player
+                                    and enemeis who try to touch him and inflict damage, you should tap on each enemy
+                                    multiple times to kill him.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="project-info--headings my-4"># My Role</h1>
+                                <h2 class="text-muted">
+                                    I made the frontend part, the player's shape and the enemies as well as the backend.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light project-info--headings my-4"># Technologies
+                                </h1>
+                                <h2 class="text-muted">
+                                    Flutter, Flame Engin, Shared_preferences and photoshop.
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div
+                            class="row section-btn align-items-center justify-content-around text-center project-links my-5">
+
+                            <div class="col-4">
+                                <a href="#" class="btn"><i class="fab fa-github"></i> </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-app-store"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-google-play"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container project-showcase project-showcase-reverese">
+            <div class="row justify-content-center align-items-center justify-content-md-between">
+                <div class="col-md-5 col-xs-10 col-sm-10 project-info">
+                    <div class="container">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <img src="./images/projects/mobile/project1_logo.png" alt="" srcset="" width="40px">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="text-muted">
+                                    Tap The Swarm
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light my-4"># Description</h1>
+                                <h3 class="text-muted">
+                                    A simple flutter game I've made as an intake project, the idea is there is a player
+                                    and enemeis who try to touch him and inflict damage, you should tap on each enemy
+                                    multiple times to kill him.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="project-info--headings my-4"># My Role</h1>
+                                <h2 class="text-muted">
+                                    I made the frontend part, the player's shape and the enemies as well as the backend.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h1 class="text-secondary bg-light project-info--headings my-4"># Technologies
+                                </h1>
+                                <h2 class="text-muted">
+                                    Flutter, Flame Engin, Shared_preferences and photoshop.
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div
+                            class="row section-btn align-items-center justify-content-around text-center project-links my-5">
+
+                            <div class="col-4">
+                                <a href="#" class="btn"><i class="fab fa-github"></i> </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-app-store"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-google-play"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-5 col-xs-10 col-sm-10 my-5">
+                    <img src="./images/projects/mobile/project1.png"
+                        style="max-width: 40rem; min-width: 280px; width: 100%;" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!--End Mobile projects-->
+        <!--projects-->
+        <!--SKILLS-->
+        <div class="container skills" id="skills">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <h1 class="see-projects text-center">
+                        <a href="#" class="text-decoration-none">
+                            Sklis
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center web-dev-projects">
+                <div class="col-md-6 col-sm-8 col-xs-8 border border-success">
+                    <h2 class="text-muted text-wrap">
+                        I have more than
+                        8 years' experience building rich web applications for clients all over the
+                        world. Below is a quick overview of my main technical skill sets and tools I
+                        use. Want to find out more about my experience?
+                        <a href="#">Check out
+                            my online resume</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="section-projects section-skills container my-5">
+            <div class="row">
+                <!--//skills-block-->
+                <div class="skills-block col my-5 font-weight-bold">
+                    <div class="skills-block-inner container bg-white shadow-sm py-4 px-5 position-relative">
+                        <h1 class="skills-cat text-center my-5 text-secondary">Mobile Dev</h1>
+                        <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                            <img class="skills-icon" src="./images/undraw_download_pc33.svg" width="130px">
+                        </div>
+                        <ul class="skills-list list-unstyled text-secondary">
+                            <li class="mb-2">
+                                <i class="fa fa-check-circle text-icon-secondary mr-2"></i>
+                                Flutter
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon-secondary mr-2"></i>
+                                Firebase
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon-secondary mr-2"></i>
+                                Swift
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon-secondary mr-2"></i>
+                                Java
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//skills-block-inner-->
+                </div>
+                <!--//skills-block-->
+                <div class="skills-block col my-5 font-weight-bold">
+                    <div class="skills-block-inner container bg-white shadow-sm py-4 px-5 position-relative">
+                        <h1 class="skills-cat text-center my-5 text-secondary">Web Dev</h1>
+                        <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                            <img class="skills-icon" src="./images/undraw_code_review_l1q9.svg" width="130px">
+                        </div>
+                        <ul class="skills-list list-unstyled text-secondary">
+                            <li class="mb-2">
+                                <i class="fa fa-check-circle text-icon mr-2"></i>
+                                Django
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon mr-2"></i>
+                                html css javascript
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon mr-2"></i>
+                                jQuery Ajax
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon mr-2"></i>
+                                Vue.js
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//skills-block-inner-->
+                </div>
+                <!--//skills-block-->
+                <div class="skills-block col my-5 font-weight-bold">
+                    <div class="skills-block-inner container bg-white shadow-sm py-4 px-5 position-relative">
+                        <h1 class="skills-cat text-center my-5 text-secondary">Others</h1>
+                        <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                            <img class="skills-icon" src="./images/undraw_version_control_9bpv.svg" width="130px">
+                        </div>
+                        <ul class="skills-list list-unstyled text-secondary">
+                            <li class="mb-2">
+                                <i class="fa fa-check-circle text-icon-trinary mr-2"></i>
+                                Java SE | JavaFX
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon-trinary mr-2"></i>
+                                C | C++
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon-trinary mr-2"></i>
+                                Pyhton | ML
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon-trinary mr-2"></i>
+                                SQL | PL SQL | MongoDB
+                            </li>
+                            <li class="my-3">
+                                <i class="fa fa-check-circle text-icon-trinary mr-2"></i>
+                                Git
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//skills-block-inner-->
+                </div>
+            </div>
+        </div>
+        <!--Skills-->
+        <!--About Me-->
+        <div class="container about-me" id="about">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <h1 class="see-projects text-center">
+                        <a href="#" class="text-decoration-none">
+                            My Jourey
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center web-dev-projects">
+                <div class="col-md-6 col-sm-8 col-xs-8 border border-success">
+                    <h2 class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis optio quos omnis
+                        officia maxime voluptatibus aspernatur eius assumenda et dolorum tempore deserunt,
+                        doloremque incidunt amet! Odio laboriosam quo vero consequatur voluptatum delectus
+                        facere amet maxime sequi iusto ipsa quidem fuga quis, explicabo totam quisquam esse
+                        nulla quaerat possimus eos quibusdam!
+                        <a href="">Check out
+                            my online resume</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!--About me-->
+        <!---->
+        <div class="container now-content">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-xs-10 col-sm-10 col-md-6">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-10 text-sm-center col-md-5">
+                                <img src="./images/undraw_mathematics_4otb.svg"
+                                    style="max-width: 40rem; min-width: 280px; width: 100%;" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-10 text-sm-center col-md-5">
+                    <h1 class="text-dark bg-light my-5 text-muted">
+
+                        Early Schooling
+
+                    </h1>
+                    <h2 class="text-muted my-5 text-left">
+                        I grew up in Algeirs and did my schooling at Birkhadem Algeirs and studied there until I
+                        got my BAC(High School Diploma) with a great score.
+                        <br>
+                    </h2>
+                    <h2 class="text-muted my-5 text-left">
+                        Fully concentrated about studies. Only one goal in my mind is to secure good marks
+                        and make my parents proud. Also, I was the Academic Prefect at my school
+                        and it was my first position of responsibility. Schooling was not fun but I was able to
+                        be amongst the best with minimum efforts.
+                    </h2>
+                    <h3 class="font-weight-bold text-muted my-2 text-left">
+                        -- 2016 --
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="container now-content">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-xs-10 text-sm-center  col-md-5">
+                    <h1 class="bg-light text-dark my-5 mr-auto">
+
+                        University & Graduation
+
+                    </h1>
+                    <h2 class="text-muted my-5 text-left">
+                        Currently, I’m a third-year undergraduate Computer Science student at the Indian
+                        Institute of Technology, Roorkee.
+                        <br>
+                    </h2>
+                    <h2 class="text-muted my-5 text-left">
+                        IITs are considered to the finest institutes in India and is studying in one of them
+                        is a dream come true.
+                    </h2>
+                    <h2 class="text-muted my-5 text-left">
+                        I have started learning the so-called coding in the college
+                        itself with the help of awesome seniors and friends. It has been a great learning
+                        experience in the college and hopes that it will continue as it is going.
+                    </h2>
+                    <h3 class="font-weight-bold text-muted my-2 text-right">
+                        -- 2019 --
+                    </h3>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-6">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-10 text-sm-center col-md-5">
+                                <img src="./images/undraw_learning_2q1h.svg"
+                                    style="max-width: 40rem; min-width: 280px; width: 100%;" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Blogs-->
+        <div class="container blogs-scroll" id="blogs">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <h1 class="see-projects text-center">
+                        <a href="#" class="text-decoration-none">
+                            My Blogs
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="section-projects section-skills container my-5">
+            <div class="row">
+                <!--//skills-block-->
+                <div class="skills-block col my-5 font-weight-bold">
+                    <div class="skills-block-inner container bg-white shadow-sm py-4 px-5 position-relative">
+                        <h1 class="skills-cat text-start my-5 text-secondary">Blog's Title</h1>
+                        <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                            <img class="skills-icon" src="./images/undraw_download_pc33.svg" width="130px">
+                        </div>
+                        <h3 class="blogs-news">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, inventore dolor possimus
+                            alias atque, expedita, optio nemo similique iusto excepturi odio consequatur totam iste sit
+                            nobis soluta maiores doloribus natus?
+                        </h3>
+                    </div>
+                    <!--//skills-block-inner-->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JQUERY -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- for the menu to work -->
+    <script>
+        //var isActive = false;
+        const selectElement = (element) => document.querySelector(element);
+        const header = selectElement('header');
+        const mainc = selectElement('main');
+        const menu = selectElement('.menu');
+        menu.addEventListener('click', () => {
+            header.classList.toggle('active');
+
+        });
+        mainc.addEventListener('click', () => {
+            if (header.classList.contains('active')) {
+                header.classList.remove('active');
+            }
+        });
+        window.onclick = (event) => {
+            if (event.target.matches('.active')) {
+                if (header.classList.contains('active')) {
+                    header.classList.remove('active');
+                }
+
+            }
+        };
+
+    </script>
+</body>
+
+</html>

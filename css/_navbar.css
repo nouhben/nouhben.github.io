@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 11px;
+}
+
+body {
+    color: #191919;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    position: fixed;
+    background-color: #FFF;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    z-index: 100;
+}
+
+.menu {
+    display: block;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    top: 2rem;
+    left: 2rem;
+    z-index: 999;
+    cursor: pointer;
+
+}
+
+nav {
+    width: 25rem;
+    height: 100%;
+    position: fixed;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 10rem;
+    background-color: #FFF;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .24);
+    font-size: 2.5rem;
+    z-index: 998;
+    transform: translateX(-50rem);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 96rem;
+    margin: 2rem auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: #191919;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+.bar,
+.bar::after,
+.bar::before {
+    position: absolute;
+    background-color: #191919;
+    margin: auto;
+    width: 100%;
+    height: 3px;
+    content: "";
+    top: 50%;
+    left: 0;
+
+}
+
+.bar {
+    margin-top: -2px;
+}
+
+.bar::before {
+    top: -1.2rem;
+}
+
+.bar::after {
+    top: 1.2rem;
+}
+
+.bar::after,
+.bar::before {
+    transform: rotate(0deg);
+}
+
+.active .bar::before {
+    transform: rotate(90deg);
+}
+
+.active .bar::after {
+    display: none;
+    transform: rotate(-45deg);
+}
+
+.active .bar {
+    transform: rotate(-45deg);
+}
+
+
+.active .bar::after,
+.active .bar::before {
+    top: 0;
+}
+
+.active .menu {
+    left: 25.5rem;
+    top: 2.5rem;
+}
+
+.active nav {
+    transform: translateX(0);
+    transition: translateX ease-out .8s;
+}
+
+/*
+# Social Profiles
+--------------------------------*/
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2em auto;
+    width: 90%;
+}
+
+.social-media a,
+.nav-link {
+    font-size: 1.5rem;
+    color: #191919;
+    transition: all 0.35s;
+}
+
+.social-media a:hover,
+.nav-link:hover {
+    color: #f0437e;
+}
+
+/**** Styling the navigation links ***/
+.nav-link {
+    display: block;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    line-height: 6rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.7rem;
+
+}
+
+.current {
+    color: #f0437e;
+}

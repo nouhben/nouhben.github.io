@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {{title}}
+    </title>
+
+    <title>...</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="./css/fontawesome/font-awesome.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/_navbar.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="./images/mylogo.png" alt="" srcset="">
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#" class="nav-link current">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="social-media">
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <i class="fab fa-codepen fa-2x"></i>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row justify-content-center row1">
+                <div class="col-xs-12 col-sm-8 col-md-6 col1">
+                    row 1 col 1
+                </div>
+                <div class="col-xs-12  col-sm-4 col-md-6 col2">
+                    row 1 col 2
+                </div>
+            </div>
+            <div class="row row1 align-items-center justify-content-between">
+                <div class="col-5 col-sm-5 order-sm-10 order-md-10 col1 ">
+                    row 2 col 1
+                </div>
+                <div class="col-5 col-sm-5  order-sm-3 order-md-2 col2">
+                    row 2 col 2
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center row1">
+                <div class="col-xs-12 col-sm-8 col-md-6 col1">
+                    row 1 col 1
+                </div>
+                <div class="col-xs-12  col-sm-4 col-md-6 col2">
+                    row 1 col 2
+                </div>
+            </div>
+            <div class="row row1 align-items-center justify-content-between">
+                <div class="col-5 col-sm-5 order-sm-10 order-md-10 col1 ">
+                    row 2 col 1
+                </div>
+                <div class="col-5 col-sm-5  order-sm-3 order-md-2 col2">
+                    row 2 col 2
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center row1">
+                <div class="col-xs-12 col-sm-8 col-md-6 col1">
+                    row 1 col 1
+                </div>
+                <div class="col-xs-12  col-sm-4 col-md-6 col2">
+                    row 1 col 2
+                </div>
+            </div>
+            <div class="row row1 align-items-center justify-content-between">
+                <div class="col-5 col-sm-5 order-sm-10 order-md-10 col1 ">
+                    row 2 col 1
+                </div>
+                <div class="col-5 col-sm-5  order-sm-3 order-md-2 col2">
+                    row 2 col 2
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center row1">
+                <div class="col-xs-12 col-sm-8 col-md-6 col1">
+                    row 1 col 1
+                </div>
+                <div class="col-xs-12  col-sm-4 col-md-6 col2">
+                    row 1 col 2
+                </div>
+            </div>
+            <div class="row row1 align-items-center justify-content-between">
+                <div class="col-5 col-sm-5 order-sm-10 order-md-10 col1 ">
+                    row 2 col 1
+                </div>
+                <div class="col-5 col-sm-5  order-sm-3 order-md-2 col2">
+                    row 2 col 2
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JQUERY -->
+    <script src="js/jquery.js"></script>
+    <!-- for the menu to work -->
+    <script>
+        //var isActive = false;
+        const selectElement = (element) => document.querySelector(element);
+        const header = selectElement('header');
+        const mainc = selectElement('main');
+        const menu = selectElement('.menu');
+        menu.addEventListener('click', () => {
+            header.classList.toggle('active');
+
+        });
+        mainc.addEventListener('click', () => {
+            if (header.classList.contains('active')) {
+                header.classList.remove('active');
+            }
+        });
+        window.onclick = (event) => {
+            if (event.target.matches('.active')) {
+                if (header.classList.contains('active')) {
+                    header.classList.remove('active');
+                }
+
+            }
+        };
+
+    </script>
+</body>
+
+</html>
