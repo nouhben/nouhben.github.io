@@ -19,6 +19,8 @@
 
     <!-- Styles -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
         *,
         *::before,
         *::after {
@@ -29,6 +31,7 @@
 
         html {
             font-size: 10px !important;
+            font-family: 'Roboto', sans-serif;
         }
 
         body {
@@ -70,7 +73,7 @@
             left: 2rem;
             z-index: 999;
             cursor: pointer;
-
+            transition: all .4s ease-in;
         }
 
         nav {
@@ -86,6 +89,7 @@
             font-size: 2.5rem;
             z-index: 998;
             transform: translateX(-50rem);
+            transition: all .5s ease-in;
         }
 
         .nav-container {
@@ -122,7 +126,7 @@
             content: "";
             top: 50%;
             left: 0;
-
+            transition: all .4s ease-in;
         }
 
         .bar {
@@ -168,7 +172,7 @@
 
         .active nav {
             transform: translateX(0);
-            transition: translateX ease-out .8s;
+            transition: all .4s ease-in;
         }
 
         /*
@@ -432,6 +436,15 @@
             font-weight: 600;
             font-size: 1.7rem;
             letter-spacing: 2px;
+            line-height: 2.5rem;
+        }
+
+        .blog-active {
+            width: 299px;
+            min-height: 369px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, .23);
+            border: 3px solid #9e9b9b;
+            transition: all .2s ease-in;
         }
     </style>
 </head>
@@ -653,8 +666,8 @@
 
                     </h1>
                     <p class="text-muted my-5  text-xs-center text-sm-center text-md-left">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia dicta rem animi
-                        cupiditate esse consectetur eum alias unde sunt in molestias.
+                        I'm trying to manage three youtube channels, one about programming where I post tutorials on
+                        Django and javascript and Flutter, the 2 Others are a future project.
                     </p>
                 </div>
             </div>
@@ -1015,15 +1028,15 @@
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-center web-dev-projects">
-                <div class="col-md-6 col-sm-8 col-xs-8 border border-success">
-                    <h2 class="text-muted text-wrap">
-                        I have more than
-                        8 years' experience building rich web applications for clients all over the
+                <div class="col-md-7 col-sm-10 col-xs-10">
+                    <p class="text-muted text-wrap">
+                        My journey in the field has just started, and I will certainely gain enough experience to start
+                        building rich web and mobile applications for clients all over the
                         world. Below is a quick overview of my main technical skill sets and tools I
-                        use. Want to find out more about my experience?
+                        use. Want to find out more about my working experience?
                         <a href="#">Check out
-                            my online resume</a>
-                    </h2>
+                            my online resume(pdf)</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -1134,15 +1147,9 @@
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-center web-dev-projects">
-                <div class="col-md-6 col-sm-8 col-xs-8 border border-success">
+                <div class="col-md-7 col-sm-10 col-xs-10">
                     <h2 class="text-muted">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis optio quos omnis
-                        officia maxime voluptatibus aspernatur eius assumenda et dolorum tempore deserunt,
-                        doloremque incidunt amet! Odio laboriosam quo vero consequatur voluptatum delectus
-                        facere amet maxime sequi iusto ipsa quidem fuga quis, explicabo totam quisquam esse
-                        nulla quaerat possimus eos quibusdam!
-                        <a href="">Check out
-                            my online resume</a>
+                        My journey up to this moment from early schooling to Graduation and a bit of storytelling.
                     </h2>
                 </div>
             </div>
@@ -1167,19 +1174,19 @@
                         Early Schooling
 
                     </h1>
-                    <h2 class="text-muted my-5 text-left">
+                    <p class="text-muted my-5 text-left">
                         I grew up in Algeirs and did my schooling at Birkhadem Algeirs and studied there until I
                         got my BAC(High School Diploma) with a great score.
                         <br>
-                    </h2>
-                    <h2 class="text-muted my-5 text-left">
+                    </p>
+                    <p class="text-muted my-5 text-left">
                         Fully concentrated about studies. Only one goal in my mind is to secure good marks
                         and make my parents proud. Also, I was the Academic Prefect at my school
                         and it was my first position of responsibility. Schooling was not fun but I was able to
                         be amongst the best with minimum efforts.
-                    </h2>
+                    </p>
                     <h3 class="font-weight-bold text-muted my-2 text-left">
-                        -- 2016 --
+                        <span class="first"></span> 2016
                     </h3>
                 </div>
             </div>
@@ -1207,7 +1214,7 @@
                         experience and hopes that it will continue that way.
                     </p>
                     <h3 class="font-weight-bold text-muted my-3 text-right">
-                        -- 2019 --
+                        <span class="first"></span> 2019
                     </h3>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-6">
@@ -1215,33 +1222,34 @@
                         <div class="row justify-content-center">
                             <div class="col-xs-10 text-sm-center col-md-5">
                                 <img src="./images/undraw_learning_2q1h.svg"
-                                    style="max-width: 40rem; min-width: 280px; width: 100%;" alt="" srcset="">
+                                    style="max-width: 40rem; min-width: 290px; width: 100%;" alt="" srcset="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Blogs-->
+
+        <!--Fitness & Lifestyle-->
         <div class="container blogs-scroll" id="blogs">
             <div class="row align-items-center">
                 <div class="col-12">
                     <h1 class="see-projects text-center">
                         <a href="#" class="text-decoration-none">
-                            My Blogs
+                            Fitness & Lifestyle
                         </a>
                     </h1>
                 </div>
             </div>
         </div>
-        <div class="section-projects section-skills container my-5">
+        <div class="section-projects section-skills container" style="margin: 10rem auto 15rem auto;">
             <div class="row">
-                <!--//skills-block-->
-                <div class="skills-block col my-5 font-weight-bold">
+                <!--//blog-block-->
+                <div class="skills-block blog-post col my-5 font-weight-bold">
                     <div class="skills-block-inner container bg-white shadow-sm py-4 px-5 position-relative">
-                        <h1 class="skills-cat text-start my-5 text-secondary">Blog's Title</h1>
+                        <h1 class="skills-cat text-center mt-5 text-secondary">Django Forms & Ajax</h1>
                         <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
-                            <img class="skills-icon" src="./images/undraw_download_pc33.svg" width="130px">
+                            <img class="skills-icon mb-5" src="./images/undraw_download_pc33.svg" width="130px">
                         </div>
                         <h3 class="blogs-news">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, inventore dolor possimus
