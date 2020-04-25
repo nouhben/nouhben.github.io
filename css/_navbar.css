@@ -1,3 +1,8 @@
+:root {
+    font-size: 10px !important;
+    font-family: 'Poppins', sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -7,11 +12,12 @@
 }
 
 html {
-    font-size: 11px;
+    font-size: 10px !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    color: #191919;
+    color: #191919 !important;
 }
 
 a {
@@ -20,7 +26,7 @@ a {
 
 
 a:focus {
-    outline: thin dotted;
+    outline: none !important;
 }
 
 a:hover,
@@ -37,7 +43,7 @@ header {
     background-color: #FFF;
     overflow: hidden;
     margin-bottom: 2rem;
-    z-index: 100;
+    z-index: 998;
 }
 
 .menu {
@@ -49,7 +55,7 @@ header {
     left: 2rem;
     z-index: 999;
     cursor: pointer;
-
+    transition: all .4s ease-in;
 }
 
 nav {
@@ -65,6 +71,7 @@ nav {
     font-size: 2.5rem;
     z-index: 998;
     transform: translateX(-50rem);
+    transition: all .5s ease-in;
 }
 
 .nav-container {
@@ -101,7 +108,7 @@ nav ul {
     content: "";
     top: 50%;
     left: 0;
-
+    transition: all .4s ease-in;
 }
 
 .bar {
@@ -147,7 +154,7 @@ nav ul {
 
 .active nav {
     transform: translateX(0);
-    transition: translateX ease-out .8s;
+    transition: all .4s ease-in;
 }
 
 /*

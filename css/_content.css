@@ -141,6 +141,12 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, .23);
     border: 1px solid #ebebeb;
     border-radius: 25px;
+    transition: all .2s ease;
+}
+
+.skills-block-inner:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.637);
+    border: 1.5px solid #e7e5e5;
 }
 
 .send {
@@ -203,6 +209,9 @@
 .project-showcase {
     margin-top: 20rem;
     margin-bottom: 25rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .23);
+    border: 1px solid #ebebeb;
+    border-radius: 25px;
 }
 
 @media screen and (max-width:800px) {
@@ -217,4 +226,13 @@ p {
     font-weight: 600;
     font-size: 1.7rem;
     letter-spacing: 2px;
+    line-height: 2.5rem;
+}
+
+.blog-active {
+    width: 299px;
+    min-height: 369px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .23);
+    border: 3px solid #9e9b9b;
+    transition: all .2s ease-in;
 }
