@@ -163,7 +163,6 @@
             transform: rotate(-45deg);
         }
 
-
         .active .bar::after,
         .active .bar::before {
             top: 0;
@@ -179,9 +178,9 @@
             transition: all .4s ease-in;
         }
 
-        /*
-# Social Profiles
---------------------------------*/
+        /* -------------------
+        # Social Profiles
+        ---------------------*/
 
         .social-media {
             display: flex;
@@ -456,10 +455,23 @@
         }
 
         @media screen and (max-width:800px) {
+            .now {
+                margin: 25rem auto 1rem auto;
+            }
 
             .see-projects a:after,
             .see-projects a:before {
                 width: 15%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #myimg {
+                width: 80px;
+            }
+
+            .landing {
+                margin-top: 5rem;
             }
         }
 
@@ -602,9 +614,9 @@
                 class="row align-items-center justify-content-sm-center justify-content-md-center justify-content-lg-center myrow">
                 <div
                     class="col-xs-12 col-sm-12 col-md-10 text-center col-lg-5 landing-img py-2 px-4 order-xs-10 order-sm-10">
-                    <img src="./images/me2.jpg" alt="a person's gace picture" srcset="">
+                    <img src="./images/me2.jpg" alt="a person's gace picture" srcset="" id="myimg">
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12  my-xs-5 col-lg-6 landing-text order-sm-1 order-xs-1">
+                <div class="col-xs-12 col-sm-12 col-md-12  my-xs-5 col-lg-6 landing-text order-sm-2 order-xs-2">
                     <div class="container">
                         <div class="row mt-5">
                             <div class="col-12 mt-5">
