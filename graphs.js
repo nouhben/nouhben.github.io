@@ -1,3 +1,5 @@
+const mylog = document.getElementById('log');
+
 const airports = 'PHX BKK OKC JFK LAX MEX EZE HEL LOS LAP LIM'.split(' ');
 const routes = [
     ['PHX', 'LAX'],
@@ -33,8 +35,12 @@ function addEdge(origin, destination) {
 airports.forEach(addNode);
 routes.forEach(route => addEdge(...route));
 
+adjecencyList.forEach(e => {
+    mylog.innerHTML += '[' + e + ']';
+    mylog.innerHTML += '<br>';
+});
 
-//BFS Bread First Search
+//BFS Breadth First Search
 function BFS(start) {
     const visited = new Set(); //occure only once
     const queue = [start]; //FIFO File
@@ -44,7 +50,7 @@ function BFS(start) {
         const destinations = adjecencyList.get(airport);
         for (const destination of destinations) {
             if (destination === 'BKK') {
-                console.log('FOUND IT');
+                mylog.innerHTML += 'Found it with <h1>BFS</h1>!';
             }
             if (!visited.has(destination)) {
                 visited.add(destination); // to mark the destination as visited
@@ -53,7 +59,7 @@ function BFS(start) {
         }
     }
 }
-console.log(adjecencyList);
+
 BFS('JFK');
 
 //DFS Depth first search
@@ -64,7 +70,7 @@ function DFS(start, visited = new Set()) {
     console.log(destinations);
     for (const destination of destinations) {
         if (destination === 'BKK') {
-            console.log('DFS found BKK');
+            mylog.innerHTML += 'Found it with <h1>DFS</h1>!';
             return;
         }
         if (!visited.has(destination)) {
